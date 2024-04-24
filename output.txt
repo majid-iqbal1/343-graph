@@ -1,4 +1,4 @@
-Tue Feb 13 00:37:37 UTC 2024
+Wed Apr 24 03:34:27 UTC 2024
 Linux LinuxMachine 6.4.16-linuxkit #1 SMP PREEMPT Thu Nov 16 10:49:20 UTC 2023 aarch64 aarch64 aarch64 GNU/Linux
 uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wheel)
 =====================================================
@@ -38,22 +38,22 @@ Running clang-format on ./main.cpp
 6. Using valgrind to check for memory leaks
    Check for "definitely lost" in the output below
 =====================================================
-==2108== Memcheck, a memory error detector
-==2108== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==2108== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
-==2108== Command: ./a.out
-==2108== Parent PID: 1962
-==2108== 
-==2108== 
-==2108== HEAP SUMMARY:
-==2108==     in use at exit: 0 bytes in 0 blocks
-==2108==   total heap usage: 380 allocs, 380 frees, 148,738 bytes allocated
-==2108== 
-==2108== All heap blocks were freed -- no leaks are possible
-==2108== 
-==2108== For lists of detected and suppressed errors, rerun with: -s
-==2108== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-Tue Feb 13 00:37:44 UTC 2024
+==43600== Memcheck, a memory error detector
+==43600== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==43600== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==43600== Command: ./a.out
+==43600== Parent PID: 43440
+==43600== 
+==43600== 
+==43600== HEAP SUMMARY:
+==43600==     in use at exit: 0 bytes in 0 blocks
+==43600==   total heap usage: 380 allocs, 380 frees, 148,738 bytes allocated
+==43600== 
+==43600== All heap blocks were freed -- no leaks are possible
+==43600== 
+==43600== For lists of detected and suppressed errors, rerun with: -s
+==43600== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Wed Apr 24 03:34:37 UTC 2024
 =====================================================
 To create an output.txt file with all the output from this script
 Run the below command
