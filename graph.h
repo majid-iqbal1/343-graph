@@ -96,23 +96,38 @@ public:
                          int weight)) const;
 
 private:
+
   struct Vertex {
+    // Name of the vertex
     string name;
+
+    // List of edges connected to the vertex, along with their weights
     vector<pair<struct Vertex *, int>> edges;
+
+    // Constructor for the Vertex struct
     explicit Vertex(string n) : name(std::move(n)) {}
   };
 
+  // Flag indicating if the graph has directed edges
   bool directEdge;
 
+  // List of pointers to all vertices in the graph
   vector<Vertex *> graphVertices;
 
+  // Finds the index of a vertex with the given label in the graphVertices vector
   int findVertexIndex(const string &vertexLabel, const string &targetLabel) const;
 
+  // Helper function for depth-first search (DFS) traversal
   void dfsHelper(const Vertex *curr, vector<string> &visited);
 
+  // Helper function for breadth-first search (BFS) traversal
   void bfsHelper(const Vertex *curr, vector<string> &visited);
 
-  void dijkstraPrimHelper(Vertex *curr, map<Vertex *, pair<vector<string>, int>> &holder, int distance, vector<string> path, map<Vertex *, int> &distanceHolder, int pastDistance) const;
+  // Helper function for Dijkstra's algorithm or Prim's algorithm
+    void dijkstraPrimHelper(Vertex *curr, map<Vertex *, pair<vector<string>,
+                            int>> &holder, int distance, vector<string> path,
+                            map<Vertex *, int> &distanceHolder,
+                            int pastDistance) const;
 };
 
 #endif // GRAPH_H
